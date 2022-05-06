@@ -6,6 +6,8 @@
 		width: 844rem
 		margin: 0 auto
 		margin-bottom: 80rem
+		&--mobile
+			display: none
 	&__item
 		display: grid
 	&__item.start
@@ -15,7 +17,11 @@
 		.history__description
 			display: block
 			padding-left: 34rem
-			margin-top: 111rem
+			display: flex
+			flex-direction: column
+			justify-content: center
+			padding-top: 5rem
+			padding-top: 16rem
 			p
 				margin-bottom: 15rem
 		.history__image

@@ -1,12 +1,14 @@
 .promo
 	margin-bottom: 130rem
 	.container
-		padding: 4rem 119rem
-		display: grid
-		grid-template-columns: repeat(2, 1fr)
+		padding: 4rem 119rem	
 	&__nav
 		font-size: 16rem
 		margin-bottom: 16rem
+		a
+			transition: all .3s
+			&:hover
+				color: $main-color
 		span
 			display: inline-block
 			width: 10rem
@@ -14,6 +16,10 @@
 			background: #331A2F
 			margin: 0 4rem
 			vertical-align: middle
+	&__content
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+
 	.title
 		font-size: 56rem
 		line-height: 80rem
@@ -40,14 +46,16 @@
 		line-height: 40rem
 		p
 			margin-bottom: 15rem
+		&--mobile
+			display: none
 	&-image
 		position: relative
 		&__bg
 			position: absolute
-			left: 31rem
-			top: 76rem
+			left: 40rem
+			top: -142rem
 		&__image
-			z-index: 10
 			position: absolute
-			top: 35rem
-			left: 60rem
+			left: 67rem
+			top: -184px
+			overflow: hidden

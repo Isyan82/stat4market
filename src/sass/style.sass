@@ -2,6 +2,10 @@
 html
 	font-size: 1px
 	font-family: "Lato"
+body
+	font-size: 14rem
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
 *
 	margin: 0
 	padding: 0
@@ -10,11 +14,7 @@ a
 	color: #000
 	text-decoration: none
 
-
-body
-	font-size: 14rem
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-h2
+.section__title
 	font-size: 48rem
 	line-height: 64rem
 	text-align: center
@@ -24,8 +24,14 @@ li
 	list-style: none
 
 .container
-	width: 1768rem
 	margin: 0 auto
+	width: 1768rem
+
+
+.disable-scroll
+	position: relative
+	overflow: hidden
+	height: 100vh
 
 @import './base/_variables.sass'
 @import './blocks/buttons/_button.sass'
@@ -35,7 +41,42 @@ li
 @import './blocks/history/_history.sass'
 @import './blocks/education/_education.sass'
 @import './blocks/decor/_decor.sass'
+@import './blocks/mobile-menu/_mobile-menu.sass'
 
 
 
 
+
+
+// media
+@media ( max-width:  1920px)
+	.container
+		width: 1200rem
+	.section__title
+		font-size: 40rem
+		line-height: 64rem
+		width: 652rem
+		
+
+@media ( max-width:  1280px)
+	.container
+		width: 738rem
+
+
+@media ( max-width:  768px)
+	.container
+		width: 330rem
+	.section__title
+		width: 330rem
+		font-size: 24rem
+		line-height: 36rem
+		margin-bottom: 65rem
+
+@media ( max-width:  360px)
+
+// media
+@import './blocks/header/_header-media.sass'
+@import './blocks/promo/_promo-media.sass'
+@import './blocks/decor/_decor-media.sass'
+@import './blocks/history/_history-media.sass'
+@import './blocks/education/_education-media.sass'
