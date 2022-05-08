@@ -1,4 +1,7 @@
 
+@import './base/_variables.sass'
+@import './blocks/buttons/_button.sass'
+
 html
 	font-size: 1px
 	font-family: "Lato"
@@ -10,9 +13,11 @@ body
 	margin: 0
 	padding: 0
 	box-sizing: border-box
+	color: $text-color
 a
-	color: #000
+	color: $text-color
 	text-decoration: none
+
 
 .section__title
 	font-size: 48rem
@@ -34,8 +39,7 @@ li
 	height: 100vh
 
 
-@import './base/_variables.sass'
-@import './blocks/buttons/_button.sass'
+
 
 @import './blocks/header/_header.sass'
 @import './blocks/promo/_promo.sass'

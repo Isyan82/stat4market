@@ -82,18 +82,30 @@
 		&__item
 			position: relative
 			padding-right: 21rem
+		
 			a, select
 				transition: all .3s
 				&:hover
 					color: $main-color
+	
 			select
 				border: none
 				appearance: none
 				font-size: 24rem
 				padding-right: 21rem
 				background: url('../img/icons/Polygon1.svg')100% no-repeat
+				position: relative
 				cursor: pointer
-
+				&::after
+					content: ''
+					position: absolute
+					right: 0
+					top: 0
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 10px 5px 0 5px
+					border-color: #000000 transparent transparent transparent
 	&__contacts
 		position: relative
 		left: 20rem
